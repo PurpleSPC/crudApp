@@ -1,0 +1,34 @@
+<h2>My Post Feed</h2>
+<div>
+    <div>
+
+        <h2>
+            {{posts.length}} Messages on crudApp </h2>
+
+    </div>
+
+    <ul>
+        <li *ngFor="let post of posts">
+            <!-- wrapper for each note -->
+            <div class="card">
+
+                <div class="card">
+                    user id:{{post.userId}}
+                </div>
+                
+                <div>
+                    Title: {{post.title}}
+                </div>
+
+                <div>
+
+                    <p>{{post.body}}</p>
+
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+

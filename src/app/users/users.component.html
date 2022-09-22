@@ -1,0 +1,31 @@
+<div>
+    <div>
+
+        <h2>
+            {{users.length}} Users on crudApp </h2>
+
+    </div>
+
+    <ul>
+        <li *ngFor="let user of users">
+            <!-- wrapper for each note -->
+            <div class="card col-6">
+
+                <div class="card">
+                    user id: {{user.id}}
+                </div>
+                
+                <div class="card">
+                    username: {{user.userName}}
+                </div>
+
+                <div class="card">
+
+                    email: {{user.email}}
+
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
