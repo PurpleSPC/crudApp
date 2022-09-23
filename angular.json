@@ -26,7 +26,10 @@
               "src/styles.css",
               "node_modules/boostrap5/src/css/boostrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "node_modules/bootstrap5/src/js/bootsrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
