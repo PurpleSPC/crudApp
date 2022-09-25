@@ -1,1 +1,2 @@
-@import "../node_modules/bootstrap5/src/css/bootstrap.min.css"
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+/* @import "../node_modules/bootstrap5/src/css/bootstrap.min.css" */
