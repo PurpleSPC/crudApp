@@ -9,6 +9,8 @@ import { MessageService } from './message.service';
 
 export class PostService {
   
+  posts:Post[] = [];
+  
   private postsUrl = 'https://jsonplaceholder.typicode.com/posts';
 
   httpOptions = {
@@ -19,6 +21,7 @@ export class PostService {
     private http: HttpClient,
     private messageService: MessageService
   ) { }
+
 
   // method to fetch post data vai http
   getPosts(): Observable<Post[]> {
@@ -71,6 +74,8 @@ export class PostService {
 private log(message: string) {
   this.messageService.add(`PostService: ${message}`);
 }
+
+
   
 
 }
